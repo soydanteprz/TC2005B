@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Hola mi nombre es Dante Pérez</h1>
+            <h2>Estudiante de Ingeniería en Tecnologías Computacionales</h2>
+        </header>
+        <section>
+            <div class="About">
+                <h1>Sobre Mi</h1>
+                <p>
+                    Soy Dante Pérez, un estudiante mexicano de Ingeniería en
+                    Software de 19 años. Administro Frontend y Backend como mis
+                    habilidades principales. Asimismo, me gusta resolver
+                    problemas utilizando la tecnología o diseñar sitios web,
+                    como puedes ver. Cuando no estoy trabajando o programando,
+                    juego baloncesto y videojuegos. Dato curioso: me encanta The
+                    Office
+                </p>
+            </div>
+
+            <div class="Skills">
+                <h1>Habilidades</h1>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Git</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <div class="FAQ">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pregunta</th>
+                            <th>Respuesta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                ¿Cuál es la diferencia entre Internet y la World
+                                Wide Web?
+                            </td>
+                            <td>
+                                Internet es una inmensa red de computadoras
+                                alrededor de todo el mundo conectadas entre sí.
+                                <br />
+                                En cambio, la web (la World Wide Web) es una
+                                enorme colección de páginas que se asienta
+                                sobreesa red de computadoras
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>¿Cuáles son las partes de un URL?</td>
+                            <td>
+                                <ul>
+                                    <li>HTTPS</li>
+                                    <li>Subdominio</li>
+                                    <li>Dominio</li>
+                                    <li>TLD</li>
+                                    <li>Ruta</li>
+                                    <li>Parámetro</li>
+                                    <li>Etiqueta</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Cuál es el propósito de los métodos HTTP: GET,
+                                HEAD, POST, PUT, PATCH, DELETE?
+                            </td>
+                            <td>
+                                GET: Obtiene información sobre un recurso en el
+                                servidor. Es el método más comúnmente utilizado
+                                y es idempotente, lo que significa que puede
+                                hacer varias solicitudes GET consecutivas sin
+                                afectar el estado del recurso.
+                                <br />
+                                HEAD: Es similar a GET, pero solo devuelve la
+                                cabecera HTTP sin el cuerpo de la respuesta. Es
+                                útil para verificar la existencia de un recurso
+                                o obtener información sobre él sin descargar el
+                                contenido completo.
+                                <br />
+                                POST: Envía datos a un servidor para que procese
+                                o almacene información. Por lo general, se
+                                utiliza para enviar formularios o cargar
+                                archivos.
+                                <br />
+                                PUT: Actualiza un recurso existente en el
+                                servidor. Si el recurso no existe, lo crea.
+                                <br />
+                                PATCH: Actualiza parcialmente un recurso
+                                existente en el servidor. Es similar a PUT, pero
+                                solo actualiza una parte específica del recurso
+                                en lugar de reemplazarlo por completo.
+                                <br />
+                                DELETE: Elimina un recurso en el servidor.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué método HTTP se debe utilizar al enviar un
+                                formulario HTML, por ejemplo cuando ingresas tu
+                                usuario y contraseña en algún sitio? ¿Por qué?
+                            </td>
+                            <td>RESPUESTA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué método HTTP se utiliza cuando a través de
+                                un navegador web se accede a una página a través
+                                de un URL?
+                            </td>
+                            <td>
+                                El método GET es el método HTTP más utilizado
+                                para acceder a páginas web, y se utiliza cuando
+                                un usuario hace clic en un enlace, escribe una
+                                URL en la barra de direcciones de su navegador o
+                                utiliza un botón de "refresco" para recargar una
+                                página.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Un servidor web devuelve una respuesta HTTP con
+                                código 200. ¿Qué significa esto? ¿Ocurrió algún
+                                error?
+                            </td>
+                            <td>
+                                Significa que la solicitud HTTP realizada por el
+                                cliente se ha completado exitosamente
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Es responsabilidad del desarrollador corregir
+                                un sitio web si un usuario reporta que intentó
+                                acceder al sitio y se encontró con un error 404?
+                                ¿Por qué?
+                            </td>
+                            <td>
+                                Si, ya que un error 404 es un código de estado
+                                HTTP que indica que el servidor no pudo
+                                encontrar el recurso solicitado esto puede ser
+                                causado por el enlace roto o por falta del
+                                archivo en el servidor.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Es responsabilidad del desarrollador corregir
+                                un sitio web si un usuario reporta que intentó
+                                acceder al sitio y se encontró con un error 500?
+                                ¿Por qué?
+                            </td>
+                            <td>RESPUESTA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué significa que un atributo HTML5 esté
+                                depreciado o desaprobado (deprecated)? Menciona
+                                algunos elementos de HTML 4 que en HTML5 estén
+                                desaprobados.
+                            </td>
+                            <td>RESPUESTA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Cuáles son las diferencias principales entre
+                                HTML 4 y HTML5?
+                            </td>
+                            <td>
+                                HTML5 ofrece una serie de mejoras en comparación
+                                con HTML4, como una mayor semántica, una mejor
+                                integración de multimedia, formularios más
+                                avanzados y un mejor soporte para los
+                                dispositivos móviles.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué componentes de estructura y estilo tiene
+                                una tabla?
+                            </td>
+                            <td>
+                                Estructura:
+                                <ul>
+                                    <li>
+                                        La etiqueta
+                                        <strong>table</strong> define el inicio
+                                        y el final de la tabla.
+                                    </li>
+                                    <li>
+                                        La etiqueta <strong>tr</strong> define
+                                        una fila en la tabla.
+                                    </li>
+                                    <li>
+                                        La etiqueta <strong>th</strong> define
+                                        una celda de encabezado en la tabla.
+                                    </li>
+                                    <li>
+                                        La etiqueta <strong>td</strong> define
+                                        una celda de datos en la tabla.
+                                    </li>
+                                </ul>
+                                Estilo:
+                                <ul>
+                                    <li>
+                                        La propiedad
+                                        <strong>border-collapse</strong> define
+                                        si las bordes de las celdas deben
+                                        fusionarse o no.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>border-spacing</strong> define
+                                        el espacio entre las celdas de la tabla.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>width</strong> define el ancho
+                                        de la tabla.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>height</strong> define la altura
+                                        de la tabla.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>text-align</strong> define la
+                                        alineación del texto en la celda.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>vertical-align</strong> define
+                                        la alineación vertical del texto en la
+                                        celda.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>background-color</strong> define
+                                        el color de fondo de la tabla.
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Cuáles son los principales controles de una
+                                forma HTML5?
+                            </td>
+                            <td>RESPUESTA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué tanto soporte HTML5 tiene el navegador que
+                                utilizas? Puedes utilizar la siguiente página
+                                para descubrirlo: http://html5test.com/ (Al
+                                responder la pregunta recuerda poner el
+                                navegador que utilizas)
+                            </td>
+                            <td>RESPUESTA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sobre el ciclo de vida y desarrollo de los
+                                sistemas de información: ¿Cuál es el ciclo de
+                                vida de los sistemas de información? ¿Cuál es el
+                                ciclo de desarrollo de sistemas de información?
+                            </td>
+                            <td>RESPUESTA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="Referencia">
+                <h3>Referencias</h3>
+                <ul>
+                    <li>
+                        https://www.facebook.com/bbcnews. (2019, March 12).
+                        Leonard Kleinrock, el profesor de EE.UU. que envió el
+                        primer mensaje por internet. BBC News Mundo; BBC News
+                        Mundo.
+                        <a href="https://www.bbc.com/mundo/noticias-47538812#:~:text=Internet%20es%20una%20inmensa%20red,para%20acceder%20a%20la%20web">Link</a>.
+                    </li>
+                    <li>
+                        ¿Qué es una Petición HTTP? (2022, December 19). Kinsta®.
+                        <a href="https://kinsta.com/es/base-de-conocimiento/que-es-una-peticion-http/#:~:text=GET.,necesita%20para%20cargar%20la%20p%C3%A1gina">Link</a>.
+                    </li>
+                    <li>
+                        http://www.facebook.com/digitalinkwell. (2021, April 8).
+                        HTML vs HTML5: Conoce las diferencias cruciales entre
+                        ellos. Kinsta®.
+                        <a href= "https://kinsta.com/es/blog/html-vs-html5/#:~:text=Como%20ya%20se%20ha%20dicho,Java%20Web%20Start%20y%20Flash">Link</a>.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>All Rights Reserved © 2022 by Dante Pérez</p>
+        </footer>
+    </body>
+</html>
