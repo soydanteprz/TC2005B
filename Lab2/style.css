@@ -1,0 +1,86 @@
+/* Definición de estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 auto;
+    max-width: 50em;
+    background: rgb(174,199,238);
+    background: radial-gradient(circle, rgba(174,199,238,1) 0%, rgba(104,227,215,1) 100%);
+}
+
+/* Definición de estilos para los encabezados h1 y h2 */
+h1,
+h2 {
+    font-weight: bold;
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+/* Definición de estilos para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Definición de estilos para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Definición de estilos para las listas */
+ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+
+
+/* Definición de estilos para las tablas */
+table,td, th {
+    /* ponle bordes a la tabla */
+    border: 1px solid black;
+    /* separa los bordes de la tabla del contenido */
+    padding: 5px;
+    border-collapse: collapse;
+    /* margenes dentro de la tabla */
+    margin: 1em 0;
+}
+
+/* Definición de estilos para el pie de página */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 2em 0;
+}
+
+hr {
+    /* color de la línea negro */
+    border-color: black;
+    /* grosor de la línea 2px */
+    border-width: 2px;
+    /* estilo de la línea solid */
+    border-style: solid;
+    /* margen inferior e inferior de 1em */
+    margin: 1em 0;
+}

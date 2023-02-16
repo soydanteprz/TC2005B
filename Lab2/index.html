@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <link rel="stylesheet" href="style.min.css" />
+        <title>Document</title>
+        <!-- <style>
+            body {
+                margin: 0 auto;
+                max-width: 50em;
+            }
+        </style> -->
+    </head>
+    <body>
+        <header>
+            <h1>Hola mi nombre es Dante Pérez</h1>
+            <h2>Estudiante de Ingeniería en Tecnologías Computacionales</h2>
+        </header>
+        <section>
+            <div class="About">
+                <h1>Sobre Mi</h1>
+                <p>
+                    Soy Dante Pérez, un estudiante mexicano de Ingeniería en
+                    Software de 19 años. Administro Frontend y Backend como mis
+                    habilidades principales. Asimismo, me gusta resolver
+                    problemas utilizando la tecnología o diseñar sitios web,
+                    como puedes ver. Cuando no estoy trabajando o programando,
+                    juego baloncesto y videojuegos. Dato curioso: me encanta The
+                    Office
+                </p>
+            </div>
+
+            <div class="Skills">
+                <h1>Habilidades</h1>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Git</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <div class="FAQ">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2"><h2>Preguntas Lab1</h2></th>
+                        </tr>
+                    </thead>
+
+                    <thead>
+                        <tr>
+                            <th>Pregunta</th>
+                            <th>Respuesta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                ¿Cuál es la diferencia entre Internet y la World
+                                Wide Web?
+                            </td>
+                            <td>
+                                Internet es una inmensa red de computadoras
+                                alrededor de todo el mundo conectadas entre sí.
+                                <br />
+                                En cambio, la web (la World Wide Web) es una
+                                enorme colección de páginas que se asienta
+                                sobreesa red de computadoras
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>¿Cuáles son las partes de un URL?</td>
+                            <td>
+                                <ul>
+                                    <li>HTTPS</li>
+                                    <li>Subdominio</li>
+                                    <li>Dominio</li>
+                                    <li>TLD</li>
+                                    <li>Ruta</li>
+                                    <li>Parámetro</li>
+                                    <li>Etiqueta</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Cuál es el propósito de los métodos HTTP: GET,
+                                HEAD, POST, PUT, PATCH, DELETE?
+                            </td>
+                            <td>
+                                GET: Obtiene información sobre un recurso en el
+                                servidor. Es el método más comúnmente utilizado
+                                y es idempotente, lo que significa que puede
+                                hacer varias solicitudes GET consecutivas sin
+                                afectar el estado del recurso.
+                                <br />
+                                HEAD: Es similar a GET, pero solo devuelve la
+                                cabecera HTTP sin el cuerpo de la respuesta. Es
+                                útil para verificar la existencia de un recurso
+                                o obtener información sobre él sin descargar el
+                                contenido completo.
+                                <br />
+                                POST: Envía datos a un servidor para que procese
+                                o almacene información. Por lo general, se
+                                utiliza para enviar formularios o cargar
+                                archivos.
+                                <br />
+                                PUT: Actualiza un recurso existente en el
+                                servidor. Si el recurso no existe, lo crea.
+                                <br />
+                                PATCH: Actualiza parcialmente un recurso
+                                existente en el servidor. Es similar a PUT, pero
+                                solo actualiza una parte específica del recurso
+                                en lugar de reemplazarlo por completo.
+                                <br />
+                                DELETE: Elimina un recurso en el servidor.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué método HTTP se debe utilizar al enviar un
+                                formulario HTML, por ejemplo cuando ingresas tu
+                                usuario y contraseña en algún sitio? ¿Por qué?
+                            </td>
+                            <td>
+                                El método HTTP que se debe utilizar al enviar un
+                                formulario HTML, como cuando se ingresa un
+                                usuario y contraseña en un sitio, es el método
+                                POST <br />
+                                Porque método POST envía los datos del
+                                formulario en el cuerpo de la solicitud HTTP y
+                                no en la URL como ocurre en el método GET ademas
+                                de ser mas seguro el manejo de datos y no deja
+                                expuestos los datos en la URL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué método HTTP se utiliza cuando a través de
+                                un navegador web se accede a una página a través
+                                de un URL?
+                            </td>
+                            <td>
+                                El método GET es el método HTTP más utilizado
+                                para acceder a páginas web, y se utiliza cuando
+                                un usuario hace clic en un enlace, escribe una
+                                URL en la barra de direcciones de su navegador o
+                                utiliza un botón de "refresco" para recargar una
+                                página.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Un servidor web devuelve una respuesta HTTP con
+                                código 200. ¿Qué significa esto? ¿Ocurrió algún
+                                error?
+                            </td>
+                            <td>
+                                Significa que la solicitud HTTP realizada por el
+                                cliente se ha completado exitosamente
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Es responsabilidad del desarrollador corregir
+                                un sitio web si un usuario reporta que intentó
+                                acceder al sitio y se encontró con un error 404?
+                                ¿Por qué?
+                            </td>
+                            <td>
+                                Si, ya que un error 404 es un código de estado
+                                HTTP que indica que el servidor no pudo
+                                encontrar el recurso solicitado esto puede ser
+                                causado por el enlace roto o por falta del
+                                archivo en el servidor.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Es responsabilidad del desarrollador corregir
+                                un sitio web si un usuario reporta que intentó
+                                acceder al sitio y se encontró con un error 500?
+                                ¿Por qué?
+                            </td>
+                            <td>
+                                Si, ya que el error 500 se refiere a un error
+                                interno del servidor, lo que significa que hay
+                                un problema con el servidor web y no con el
+                                cliente (el usuario). Por lo que el usuario no
+                                tiene control sobre el.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué significa que un atributo HTML5 esté
+                                depreciado o desaprobado (deprecated)? Menciona
+                                algunos elementos de HTML 4 que en HTML5 estén
+                                desaprobados.
+                            </td>
+                            <td>
+                                Un atributo se considera deprecated cuando ya no
+                                se recomienda su uso y es posible que no se
+                                admita en futuras versiones de HTML. Esto se
+                                debe a que se han introducido alternativas más
+                                modernas o más seguras para realizar la misma
+                                tarea que ese atributo, o porque ese atributo ha
+                                sido reemplazado por una nueva función.
+                                <ul>
+                                    <li>
+                                        El elemento "frame" y el atributo
+                                        "frameborder" del elemento "iframe".
+                                    </li>
+                                    <li>
+                                        El atributo "scheme" del elemento
+                                        "meta".
+                                    </li>
+                                    <li>El elemento "applet"</li>
+                                    <li>El elemento "basefont"</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Cuáles son las diferencias principales entre
+                                HTML 4 y HTML5?
+                            </td>
+                            <td>
+                                HTML5 ofrece una serie de mejoras en comparación
+                                con HTML4, como una mayor semántica, una mejor
+                                integración de multimedia, formularios más
+                                avanzados y un mejor soporte para los
+                                dispositivos móviles.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué componentes de estructura y estilo tiene
+                                una tabla?
+                            </td>
+                            <td>
+                                Estructura:
+                                <ul>
+                                    <li>
+                                        La etiqueta
+                                        <strong>table</strong> define el inicio
+                                        y el final de la tabla.
+                                    </li>
+                                    <li>
+                                        La etiqueta <strong>tr</strong> define
+                                        una fila en la tabla.
+                                    </li>
+                                    <li>
+                                        La etiqueta <strong>th</strong> define
+                                        una celda de encabezado en la tabla.
+                                    </li>
+                                    <li>
+                                        La etiqueta <strong>td</strong> define
+                                        una celda de datos en la tabla.
+                                    </li>
+                                </ul>
+                                Estilo:
+                                <ul>
+                                    <li>
+                                        La propiedad
+                                        <strong>border-collapse</strong> define
+                                        si las bordes de las celdas deben
+                                        fusionarse o no.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>border-spacing</strong> define
+                                        el espacio entre las celdas de la tabla.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>width</strong> define el ancho
+                                        de la tabla.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>height</strong> define la altura
+                                        de la tabla.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>text-align</strong> define la
+                                        alineación del texto en la celda.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>vertical-align</strong> define
+                                        la alineación vertical del texto en la
+                                        celda.
+                                    </li>
+                                    <li>
+                                        La propiedad
+                                        <strong>background-color</strong> define
+                                        el color de fondo de la tabla.
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Cuáles son los principales controles de una
+                                forma HTML5?
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>
+                                        <strong>input</strong> - Define un
+                                        control de entrada de texto.
+                                    </li>
+                                    <li>
+                                        <strong>textarea</strong> - Define un
+                                        control de entrada de texto de varias
+                                        líneas.
+                                    </li>
+                                    <li>
+                                        <strong>button</strong> - Define un
+                                        botón de control.
+                                    </li>
+                                    <li>
+                                        <strong>select</strong> - Define un
+                                        control de selección de una lista.
+                                    </li>
+                                    <li>
+                                        <strong>option</strong> - Define una
+                                        opción en una lista.
+                                    </li>
+                                    <li>
+                                        <strong>optgroup</strong> - Define un
+                                        grupo de opciones en una lista.
+                                    </li>
+                                    <li>
+                                        <strong>fieldset</strong> - Define un
+                                        grupo de controles.
+                                    </li>
+                                    <li>
+                                        <strong>label</strong> - Define una
+                                        etiqueta para un control.
+                                    </li>
+                                    <li>
+                                        <strong>form</strong> - Define una
+                                        forma.
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué tanto soporte HTML5 tiene el navegador que
+                                utilizas? Puedes utilizar la siguiente página
+                                para descubrirlo: http://html5test.com/ (Al
+                                responder la pregunta recuerda poner el
+                                navegador que utilizas)
+                            </td>
+                            <td>
+                                Tengo Google Chrome con la version
+                                110.0.5481.100 (Build oficial) (64 bits) y
+                                obtuve un puntaje de 476/555.
+                                <a
+                                    href="http://html5test.com/results/related/480b5b70dacbc766e47d4d837492ac73.html"
+                                    >Link a mi prueba</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sobre el ciclo de vida y desarrollo de los
+                                sistemas de información: ¿Cuál es el ciclo de
+                                vida de los sistemas de información? ¿Cuál es el
+                                ciclo de desarrollo de sistemas de información?
+                            </td>
+                            <td>
+                                <strong
+                                    >Ciclo de vida de los sistemas de
+                                    información</strong
+                                >
+                                <ol>
+                                    <li>
+                                        Análisis de la situación actual: Se
+                                        analiza la situación actual de la
+                                        organización para determinar las
+                                        necesidades de información.
+                                    </li>
+                                    <li>
+                                        Análisis de las necesidades de
+                                        información: Se analizan las necesidades
+                                        de información de la organización para
+                                        determinar los requerimientos de
+                                        información.
+                                    </li>
+                                    <li>
+                                        Diseño de la solución de información: Se
+                                        diseña la solución de información para
+                                        satisfacer las necesidades de
+                                        información de la organización.
+                                    </li>
+                                    <li>
+                                        Desarrollo de la solución de
+                                        información: Se desarrolla la solución
+                                        de información para satisfacer las
+                                        necesidades de información de la
+                                        organización.
+                                    </li>
+                                    <li>
+                                        Implementación de la solución de
+                                        información: Se implementa la solución
+                                        de información para satisfacer las
+                                        necesidades de información de la
+                                        organización.
+                                    </li>
+                                    <li>
+                                        Operación y mantenimiento de la solución
+                                        de información: Se opera y mantiene la
+                                        solución de información para satisfacer
+                                        las necesidades de información de la
+                                        organización.
+                                    </li>
+                                </ol>
+                                <strong
+                                    >Ciclo de desarrollo de sistemas de
+                                    información</strong
+                                >
+                                <ol>
+                                    <li>
+                                        Análisis de la situación actual: Se
+                                        analiza la situación actual de la
+                                        organización para determinar las
+                                        necesidades de información.
+                                    </li>
+                                    <li>
+                                        Análisis de las necesidades de
+                                        información: Se analizan las necesidades
+                                        de información de la organización para
+                                        determinar los requerimientos de
+                                        información.
+                                    </li>
+                                    <li>
+                                        Diseño de la solución de información: Se
+                                        diseña la solución de información para
+                                        satisfacer las necesidades de
+                                        información de la organización.
+                                    </li>
+                                    <li>
+                                        Desarrollo de la solución de
+                                        información: Se desarrolla la solución
+                                        de información para satisfacer las de la
+                                        organización.
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr />
+            <div class="Lab2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2"><h2>Preguntas Lab2</h2></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Como ingeniero de software ¿cuál es tu
+                                recomendación sobre el uso de
+                                <i>!important</i> en un CSS?
+                            </td>
+                            <td>
+                                El uso del comando <i>!important</i> puede ser
+                                demasiado útil en algunas circunstancias, sin
+                                embargo, priorizar un elemento puede afectar a
+                                otros componentes, por lo que su use deberia de
+                                ser limitado y con responsabilidad
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Si se pone una imagen de fondo en una página
+                                HTML, ¿por qué debe escogerse con cuidado?
+                            </td>
+                            <td>Respuesta</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Como ingeniero de software, ¿cuál es tu
+                                recomendación al elegir las unidades de un
+                                propiedad de estilo entre %, px y pt?
+                            </td>
+                            <td>
+                                Las unidades que debemos de escoger depende del
+                                proyeto que vamos a hacer, porque las unidades
+                                tienen un contexto para las pantallas, las
+                                unidades de porcentaje % son en relacion de la
+                                pantalla que se estamos utilizando, los pixeles
+                                son unidades exactas y los puntos (pt) son
+                                útiles para definir el tamaño de fuente para
+                                impresión y otros medios físicos
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Por qué el uso de una versión minimizada del
+                                CSS mejora el rendimiento del sitio?
+                            </td>
+                            <td>
+                                El uso de CSS minimisado hace que el no tenga
+                                que cargar todo el CSS, solo lo que necesita.
+                                <ol>
+                                    <li>
+                                        Porque el navegador no tiene que
+                                        descargar el archivo completo.
+                                    </li>
+                                    <li>Menor tamaño de archivo</li>
+                                    <li>Menor tiempo de carga</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="Referencia">
+                <h3>Referencias</h3>
+                <ul>
+                    <li>
+                        https://www.facebook.com/bbcnews. (2019, March 12).
+                        Leonard Kleinrock, el profesor de EE.UU. que envió el
+                        primer mensaje por internet. BBC News Mundo; BBC News
+                        Mundo.
+                        <a
+                            href="https://www.bbc.com/mundo/noticias-47538812#:~:text=Internet%20es%20una%20inmensa%20red,para%20acceder%20a%20la%20web"
+                            >Link</a
+                        >.
+                    </li>
+                    <li>
+                        ¿Qué es una Petición HTTP? (2022, December 19). Kinsta®.
+                        <a
+                            href="https://kinsta.com/es/base-de-conocimiento/que-es-una-peticion-http/#:~:text=GET.,necesita%20para%20cargar%20la%20p%C3%A1gina"
+                            >Link</a
+                        >.
+                    </li>
+                    <li>
+                        http://www.facebook.com/digitalinkwell. (2021, April 8).
+                        HTML vs HTML5: Conoce las diferencias cruciales entre
+                        ellos. Kinsta®.
+                        <a
+                            href="https://kinsta.com/es/blog/html-vs-html5/#:~:text=Como%20ya%20se%20ha%20dicho,Java%20Web%20Start%20y%20Flash"
+                            >Link</a
+                        >.
+                    </li>
+                    <li>
+                        HTML5 - Deprecated Tags & Attributes. (2023).
+                        Tutorialspoint.com.
+                        <a
+                            href="https://www.tutorialspoint.com/html5/html5_deprecated_tags.htm#:~:text=Deprecated%20Attributes&text=Some%20attributes%20from%20HTML4%20are,they%20have%20been%20removed%20completely.&text=img%20and%20iframe.&text=caption%2C%20iframe%2C%20img%2C%20input,%2C%20th%2C%20thead%20and%20tr.&text=table%2C%20tr%2C%20td%2C%20th%20and%20body"
+                            >Link</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>All Rights Reserved © 2022 by Dante Pérez</p>
+        </footer>
+    </body>
+</html>
