@@ -67,6 +67,11 @@ table,td, th {
     margin: 1em 0;
 }
 
+/* Definicion de th */
+th {
+    width: 50%;
+}
+
 /* Definición de estilos para el pie de página */
 footer {
     text-align: center;
