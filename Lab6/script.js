@@ -21,8 +21,22 @@ function validarContraseña(event) {
 const submitButton = document.getElementById("submit-btn");
 submitButton.addEventListener("click", validarContraseña);
 
+let texto = document.getElementById("texto");
 
-// Obtener el elemento de texto
-const hoverText = document.getElementById("hover-text");
+texto.addEventListener("click", cambiarEstilo);
 
-//
+function cambiarEstilo() {
+    texto.style.fontFamily = "Arial";
+    texto.style.fontSize = "24px";
+}
+
+var passwordInput = document.getElementById("password");
+
+passwordInput.addEventListener("mouseover", function () {
+    passwordInput.title =
+        "La contraseña debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una minúscula, un número y un carácter especial.";
+});
+
+passwordInput.addEventListener("mouseout", function () {
+    passwordInput.title = "";
+});
