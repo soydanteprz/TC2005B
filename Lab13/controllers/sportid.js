@@ -1,20 +1,4 @@
-const playersnba = [
-    {
-        name: 'LeBron James',
-        team: 'Los Angeles Lakers',
-        image: 'https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png'
-    },
-    {
-        name: 'Kevin Durant',
-        team: 'Brooklyn Nets',
-        image: 'https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png'
-    },
-    {
-        name: 'Stephen Curry',
-        team: 'Golden State Warriors',
-        image: 'https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png'
-    }
-];
+const Sportid = require('../models/sportid');
 
 const playersnfl = [
     {
@@ -36,13 +20,16 @@ const playersnfl = [
 
 
 
+exports.get_playersnba = (req, res, next) => {
 
+    console.log(req.get('Cookie'));
 
+    res.setHeader('Set-Cookie', 'loggedIn=true');
 
-exports.get_players = (req, res, next) => {
-    res.render("nba", { pageTitle: "NBA", players: playersnba });
+    console.log( Sportid.fetchAll());
+
+    res.render("nba", { pageTitle: "NBA", players: Sportid.fetchAll() });
 };
-
 
 exports.get_home = (req, res, next) => {
     res.render("home", { pageTitle: "Home" });
@@ -55,6 +42,30 @@ exports.get_preguntas = (req, res, next) => {
 exports.get_playersnfl = (req, res, next) => {
     res.render("nfl", { pageTitle: "NFL", players: playersnfl });
 };
+
+
+
+exports.get_nuevo = (req, res, next) => {
+    res.render('nuevo');
+};
+
+exports.post_nuevo = (req, res, next) => {
+
+    console.log(req.body);
+
+    const playernba = new Sportid({
+        name: req.body.name,
+        team: req.body.team,
+        image: req.body.image,
+    });
+
+    console.log(playernba);
+
+    playernba.save();
+    res.status(300).redirect("/sportid/nba");
+};
+
+
 
 
 

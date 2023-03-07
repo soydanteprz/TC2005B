@@ -2,14 +2,20 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 
-const portfolioController = require("../controllers/sportid");
+const sportidController = require("../controllers/sportid");
 
-router.get("/nba", portfolioController.get_players);
+router.get("/nba", sportidController.get_playersnba);
 
-router.get("/", portfolioController.get_home);
+router.get('/nuevo', sportidController.get_nuevo);
 
-router.get("/preguntas", portfolioController.get_preguntas);
+router.post('/nuevo', sportidController.post_nuevo);
 
-router.get("/nfl", portfolioController.get_playersnfl);
+router.get("/", sportidController.get_home);
+
+router.get("/preguntas", sportidController.get_preguntas);
+
+router.get("/nfl", sportidController.get_playersnfl);
+
+
 
 module.exports = router;
