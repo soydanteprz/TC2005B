@@ -1,0 +1,22 @@
+<!-- grid de 4 x 4 cada recuadro con su imagen, nombre y equipo del jugador -->
+
+<%- include('includes/head.ejs') %>
+
+    <div class="container text-center">
+        <h1>NFL Players</h1>
+        <% for(var i=0; i<players.length; i++) { %>
+            <div class="card text-center p-lg-5">
+                <img class="rounded mx-auto d-block w-35" src="<%= players[i].image %>" alt="<%= players[i].name %>">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= players[i].name %>
+                    </h5>
+                    <p class="card-text">
+                        <%= players[i].team %>
+                    </p>
+                </div>
+            </div>
+            <% } %>
+    </div>
+
+    <%- include('includes/foot.ejs') %>

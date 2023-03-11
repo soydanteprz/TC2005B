@@ -21,4 +21,4 @@ app.use((req, res, next) => {
     res.send("404 - Page not found");
 });
 
-app.listen(3005, () => console.log("Server ready"));
+app.listen(3000, () => console.log("Server ready"));

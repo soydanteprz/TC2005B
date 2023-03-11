@@ -1,0 +1,126 @@
+<%- include('includes/head.ejs') %>
+
+    <div class="container" style="margin: auto; width: 75%; padding: 50px;">
+        <div class="text-center">
+            <div class="col-md-12 text-center">
+                <h1>Preguntas Frecuentes</h1>
+            </div>
+
+            <div class="text-center">
+                <p>
+                    En esta pagina podras encontrar las preguntas mas frecuentes que se hacen
+                    los usuarios de la pagina.
+                </p>
+            </div>
+            <div class="text-center">
+                <img src="../assets/sportsid.jfif" alt="logo" width="200" height="200"
+                    class="rounded mx-auto d-block" />
+            </div>
+            <br><br>
+        </div>
+        <!-- accordion faq -->
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingZero">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                            ¿Qué otros templating engines existen para node?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseZero" class="collapse show" aria-labelledby="headingZero"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Existen muchos otros templating engines para node, como por ejemplo: EJS, Pug, Handlebars,
+                            etc.</p>
+                        <ul>
+                            <li>EJS (Embedded JavaScript): es un motor de plantillas con sintaxis similar a la de
+                                JavaScript. Es fácil de aprender y tiene una gran comunidad.</li>
+                            <li>Pug (Jade): es un motor de plantillas que se basa en HTML. Es fácil de aprender y tiene
+                                una gran comunidad.</li>
+                            <li>Handlebars: es un motor de plantillas que utiliza la sintaxis Mustache. Es muy popular y
+                                fácil de usar.</li>
+                            <li>Nunjucks: es un motor de plantillas que utiliza una sintaxis similar a la de Jinja y
+                                Django. Es muy potente y cuenta con muchas características avanzadas.</li>
+                            <li>Haml-js: es un motor de plantillas que utiliza la sintaxis Haml. Es muy fácil de leer y
+                                escribir.</li>
+                        </ul>
+                        <p> Cada uno de estos motores de plantillas tiene sus propias características y sintaxis, por lo
+                            que es recomendable evaluarlos para encontrar el que mejor se adapte a tus necesidades y
+                            preferencias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué beneficios encuentras en el estilo MVC?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>Separación de responsabilidades: El patrón MVC divide la aplicación en tres componentes
+                                principales: el modelo, la vista y el controlador.</li>
+                            <li>Reutilización de código: La separación de responsabilidades hace que los componentes
+                                sean más independientes, lo que permite reutilizarlos en diferentes partes de la
+                                aplicación.</li>
+                            <li>Facilidad de mantenimiento: Debido a la separación de responsabilidades, el
+                                mantenimiento de la aplicación se vuelve más fácil. </li>
+                            <li>Mejora de la legibilidad del código: Al seguir el patrón MVC, el código se divide en
+                                pequeños módulos, lo que mejora la legibilidad y comprensión del mismo.</li>
+                            <li>Facilidad de pruebas: La separación de responsabilidades y la independencia de los
+                                componentes hacen que sea más fácil probar cada componente de manera individual.</li>
+                            <li>Mejora de la escalabilidad: Debido a la independencia de los componentes, se puede
+                                escalar la aplicación con mayor facilidad. Por ejemplo, si se necesita aumentar el
+                                rendimiento de la aplicación, se pueden escalar los componentes que manejan la carga de
+                                trabajo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Encuentras alguna desventaja en el estilo arquitectónico MVC?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>Mayor complejidad inicial: La implementación de un patrón de diseño MVC puede requerir
+                                un mayor esfuerzo y tiempo de desarrollo inicial para establecer la estructura y
+                                separación de responsabilidades adecuada, lo que puede aumentar la complejidad del
+                                proyecto.</li>
+                            <li>Mayor cantidad de archivos: Debido a la separación de responsabilidades, un proyecto MVC
+                                puede tener un mayor número de archivos en comparación con otros estilos
+                                arquitectónicos, lo que puede dificultar la navegación y el mantenimiento de la
+                                aplicación.</li>
+                            <li>Aumento del tiempo de procesamiento: En algunos casos, el uso del patrón MVC puede
+                                llevar a un aumento en el tiempo de procesamiento debido a la necesidad de pasar datos y
+                                solicitudes entre los componentes.</li>
+                            <li>Dificultades para proyectos pequeños: Para proyectos pequeños, el uso del patrón MVC
+                                puede resultar excesivo y puede requerir un mayor esfuerzo en comparación con otros
+                                estilos arquitectónicos más simples.</li>
+                            <li>Falta de uniformidad: Debido a la flexibilidad que ofrece el patrón MVC, es posible que
+                                los desarrolladores implementen diferentes versiones del patrón en diferentes partes del
+                                proyecto, lo que puede generar inconsistencias y dificultades en el mantenimiento de la
+                                aplicación.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+                <%- include('includes/foot.ejs') %>
