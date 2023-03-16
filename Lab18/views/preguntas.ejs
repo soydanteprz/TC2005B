@@ -1,199 +1,440 @@
 <%- include('includes/head.ejs') %>
 
-    <div class="container" style="margin: auto; width: 75%; padding: 50px;">
-        <div class="text-center">
-            <div class="col-md-12 text-center">
-                <h1>Preguntas Frecuentes</h1>
-            </div>
-
-            <div class="text-center">
-                <p>
-                    En esta pagina podras encontrar las preguntas mas frecuentes que se hacen
-                    los usuarios de la pagina.
-                </p>
-            </div>
-            <div class="text-center">
-                <img src="../assets/sportsid.jfif" alt="logo" width="200" height="200"
-                    class="rounded mx-auto d-block" />
-            </div>
-            <br><br>
+<div class="container" style="margin: auto; width: 75%; padding: 50px">
+    <div class="text-center">
+        <div class="col-md-12 text-center">
+            <h1>Preguntas Frecuentes</h1>
         </div>
-        <!-- accordion faq -->
 
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingZero">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                            data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                            ¿Qué otros templating engines existen para node?
-                        </button>
-                    </h2>
+        <div class="text-center">
+            <p>
+                En esta pagina podras encontrar las preguntas mas frecuentes que
+                se hacen los usuarios de la pagina.
+            </p>
+        </div>
+        <div class="text-center">
+            <img
+                src="../assets/sportsid.jfif"
+                alt="logo"
+                width="200"
+                height="200"
+                class="rounded mx-auto d-block"
+            />
+        </div>
+        <br /><br />
+    </div>
+    <!-- accordion faq -->
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingZero">
+                <h2 class="mb-0">
+                    <button
+                        class="btn btn-link btn-block text-left"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseZero"
+                        aria-expanded="true"
+                        aria-controls="collapseZero"
+                    >
+                        ¿Qué otros templating engines existen para node?
+                    </button>
+                </h2>
+            </div>
+
+            <div
+                id="collapseZero"
+                class="collapse show"
+                aria-labelledby="headingZero"
+                data-parent="#accordionExample"
+            >
+                <div class="card-body">
+                    <p>
+                        Existen muchos otros templating engines para node, como
+                        por ejemplo: EJS, Pug, Handlebars, etc.
+                    </p>
+                    <ul>
+                        <li>
+                            EJS (Embedded JavaScript): es un motor de plantillas
+                            con sintaxis similar a la de JavaScript. Es fácil de
+                            aprender y tiene una gran comunidad.
+                        </li>
+                        <li>
+                            Pug (Jade): es un motor de plantillas que se basa en
+                            HTML. Es fácil de aprender y tiene una gran
+                            comunidad.
+                        </li>
+                        <li>
+                            Handlebars: es un motor de plantillas que utiliza la
+                            sintaxis Mustache. Es muy popular y fácil de usar.
+                        </li>
+                        <li>
+                            Nunjucks: es un motor de plantillas que utiliza una
+                            sintaxis similar a la de Jinja y Django. Es muy
+                            potente y cuenta con muchas características
+                            avanzadas.
+                        </li>
+                        <li>
+                            Haml-js: es un motor de plantillas que utiliza la
+                            sintaxis Haml. Es muy fácil de leer y escribir.
+                        </li>
+                    </ul>
+                    <p>
+                        Cada uno de estos motores de plantillas tiene sus
+                        propias características y sintaxis, por lo que es
+                        recomendable evaluarlos para encontrar el que mejor se
+                        adapte a tus necesidades y preferencias.
+                    </p>
                 </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button
+                        class="btn btn-link btn-block text-left"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                    >
+                        ¿Qué beneficios encuentras en el estilo MVC?
+                    </button>
+                </h2>
+            </div>
 
-                <div id="collapseZero" class="collapse show" aria-labelledby="headingZero"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        <p>Existen muchos otros templating engines para node, como por ejemplo: EJS, Pug, Handlebars,
-                            etc.</p>
-                        <ul>
-                            <li>EJS (Embedded JavaScript): es un motor de plantillas con sintaxis similar a la de
-                                JavaScript. Es fácil de aprender y tiene una gran comunidad.</li>
-                            <li>Pug (Jade): es un motor de plantillas que se basa en HTML. Es fácil de aprender y tiene
-                                una gran comunidad.</li>
-                            <li>Handlebars: es un motor de plantillas que utiliza la sintaxis Mustache. Es muy popular y
-                                fácil de usar.</li>
-                            <li>Nunjucks: es un motor de plantillas que utiliza una sintaxis similar a la de Jinja y
-                                Django. Es muy potente y cuenta con muchas características avanzadas.</li>
-                            <li>Haml-js: es un motor de plantillas que utiliza la sintaxis Haml. Es muy fácil de leer y
-                                escribir.</li>
-                        </ul>
-                        <p> Cada uno de estos motores de plantillas tiene sus propias características y sintaxis, por lo
-                            que es recomendable evaluarlos para encontrar el que mejor se adapte a tus necesidades y
-                            preferencias.</p>
-                    </div>
+            <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+            >
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Separación de responsabilidades: El patrón MVC
+                            divide la aplicación en tres componentes
+                            principales: el modelo, la vista y el controlador.
+                        </li>
+                        <li>
+                            Reutilización de código: La separación de
+                            responsabilidades hace que los componentes sean más
+                            independientes, lo que permite reutilizarlos en
+                            diferentes partes de la aplicación.
+                        </li>
+                        <li>
+                            Facilidad de mantenimiento: Debido a la separación
+                            de responsabilidades, el mantenimiento de la
+                            aplicación se vuelve más fácil.
+                        </li>
+                        <li>
+                            Mejora de la legibilidad del código: Al seguir el
+                            patrón MVC, el código se divide en pequeños módulos,
+                            lo que mejora la legibilidad y comprensión del
+                            mismo.
+                        </li>
+                        <li>
+                            Facilidad de pruebas: La separación de
+                            responsabilidades y la independencia de los
+                            componentes hacen que sea más fácil probar cada
+                            componente de manera individual.
+                        </li>
+                        <li>
+                            Mejora de la escalabilidad: Debido a la
+                            independencia de los componentes, se puede escalar
+                            la aplicación con mayor facilidad. Por ejemplo, si
+                            se necesita aumentar el rendimiento de la
+                            aplicación, se pueden escalar los componentes que
+                            manejan la carga de trabajo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                    >
+                        ¿Encuentras alguna desventaja en el estilo
+                        arquitectónico MVC?
+                    </button>
+                </h2>
+            </div>
+            <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+            >
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Mayor complejidad inicial: La implementación de un
+                            patrón de diseño MVC puede requerir un mayor
+                            esfuerzo y tiempo de desarrollo inicial para
+                            establecer la estructura y separación de
+                            responsabilidades adecuada, lo que puede aumentar la
+                            complejidad del proyecto.
+                        </li>
+                        <li>
+                            Mayor cantidad de archivos: Debido a la separación
+                            de responsabilidades, un proyecto MVC puede tener un
+                            mayor número de archivos en comparación con otros
+                            estilos arquitectónicos, lo que puede dificultar la
+                            navegación y el mantenimiento de la aplicación.
+                        </li>
+                        <li>
+                            Aumento del tiempo de procesamiento: En algunos
+                            casos, el uso del patrón MVC puede llevar a un
+                            aumento en el tiempo de procesamiento debido a la
+                            necesidad de pasar datos y solicitudes entre los
+                            componentes.
+                        </li>
+                        <li>
+                            Dificultades para proyectos pequeños: Para proyectos
+                            pequeños, el uso del patrón MVC puede resultar
+                            excesivo y puede requerir un mayor esfuerzo en
+                            comparación con otros estilos arquitectónicos más
+                            simples.
+                        </li>
+                        <li>
+                            Falta de uniformidad: Debido a la flexibilidad que
+                            ofrece el patrón MVC, es posible que los
+                            desarrolladores implementen diferentes versiones del
+                            patrón en diferentes partes del proyecto, lo que
+                            puede generar inconsistencias y dificultades en el
+                            mantenimiento de la aplicación.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                    >
+                        ¿Qué ventajas tiene escribir el código SQL únicamente en
+                        la capa del modelo?
+                    </button>
+                </h2>
+            </div>
+            <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+            >
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Separación de responsabilidades: Al limitar el
+                            código SQL a la capa del modelo, se puede mantener
+                            la separación de responsabilidades en la aplicación,
+                            lo que hace que sea más fácil de mantener y escalar.
+                        </li>
+                        <li>
+                            Abstracción de la base de datos: Al usar un ORM
+                            (mapeador objeto-relacional) o un modelo en la capa
+                            del modelo, se puede abstraer la complejidad de la
+                            base de datos y trabajar con objetos y modelos de
+                            datos más simples y coherentes.
+                        </li>
+                        <li>
+                            Mayor seguridad: Al limitar el acceso directo a la
+                            base de datos, se puede mejorar la seguridad de la
+                            aplicación al evitar posibles vulnerabilidades como
+                            inyección SQL.
+                        </li>
+                        <li>
+                            Facilidad de migración de base de datos: Al usar una
+                            capa de modelo, se puede cambiar la base de datos
+                            subyacente sin tener que cambiar el resto de la
+                            aplicación, ya que los cambios sólo necesitan
+                            realizarse en la capa del modelo.
+                        </li>
+                        <li>
+                            Facilidad de pruebas: Al limitar el código SQL a la
+                            capa del modelo, se puede simplificar la prueba de
+                            la base de datos y la capa del modelo, ya que se
+                            pueden realizar pruebas más fáciles y precisas a
+                            través de un ORM o modelo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                    >
+                        ¿Qué es SQL injection y cómo se puede prevenir?
+                    </button>
+                </h2>
+            </div>
+            <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordionExample"
+            >
+                <div class="card-body">
+                    <p>
+                        QL Injection (Inyección SQL) es un tipo de ataque
+                        informático que se produce cuando un atacante utiliza
+                        una entrada malintencionada para acceder a la base de
+                        datos subyacente de una aplicación y ejecutar comandos
+                        no autorizados. Esto se puede hacer mediante la
+                        introducción de código SQL malicioso en los campos de
+                        entrada de la aplicación, como formularios web, cajas de
+                        búsqueda, etc.
+                    </p>
+                    <p>Se puede prevenir de la siguientes maneras:</p>
+                    <ul>
+                        <li>
+                            Usar sentencias preparadas: Las sentencias
+                            preparadas son una forma de enviar comandos SQL a la
+                            base de datos sin incluir entradas de usuario
+                            directamente en el comando. Esto ayuda a prevenir la
+                            inyección SQL porque las entradas de usuario se
+                            tratan como datos y no como parte del comando.
+                        </li>
+                        <li>
+                            Escapar caracteres especiales: Escapar los
+                            caracteres especiales en las entradas de usuario
+                            puede ayudar a prevenir la inyección SQL. Esto se
+                            logra convirtiendo los caracteres especiales en una
+                            representación que no pueda ser interpretada como
+                            código SQL malicioso.
+                        </li>
+                        <li>
+                            Validar las entradas del usuario: Validar las
+                            entradas del usuario antes de enviarlas a la base de
+                            datos es una forma de garantizar que solo se
+                            ingresen datos válidos. Esto se puede hacer mediante
+                            la definición de patrones de entrada válidos para
+                            los campos de entrada, como la longitud máxima, el
+                            tipo de datos esperados, etc.
+                        </li>
+                        <li>
+                            Restringir el acceso a la base de datos: Limitar el
+                            acceso a la base de datos solo a los usuarios
+                            autorizados y reducir el número de cuentas con
+                            privilegios de administrador también puede ayudar a
+                            prevenir la inyección SQL.
+                        </li>
+                        <li>
+                            Mantener actualizado el software de la base de
+                            datos: Mantener actualizado el software de la base
+                            de datos y aplicar parches de seguridad de forma
+                            regular también puede ayudar a prevenir la inyección
+                            SQL.
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingFive">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            ¿Qué beneficios encuentras en el estilo MVC?
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseFive"
+                            aria-expanded="false"
+                            aria-controls="collapseFive"
+                        >
+                            ¿Qué otras formas de autentificación existen?
                         </button>
                     </h2>
                 </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>Separación de responsabilidades: El patrón MVC divide la aplicación en tres componentes
-                                principales: el modelo, la vista y el controlador.</li>
-                            <li>Reutilización de código: La separación de responsabilidades hace que los componentes
-                                sean más independientes, lo que permite reutilizarlos en diferentes partes de la
-                                aplicación.</li>
-                            <li>Facilidad de mantenimiento: Debido a la separación de responsabilidades, el
-                                mantenimiento de la aplicación se vuelve más fácil. </li>
-                            <li>Mejora de la legibilidad del código: Al seguir el patrón MVC, el código se divide en
-                                pequeños módulos, lo que mejora la legibilidad y comprensión del mismo.</li>
-                            <li>Facilidad de pruebas: La separación de responsabilidades y la independencia de los
-                                componentes hacen que sea más fácil probar cada componente de manera individual.</li>
-                            <li>Mejora de la escalabilidad: Debido a la independencia de los componentes, se puede
-                                escalar la aplicación con mayor facilidad. Por ejemplo, si se necesita aumentar el
-                                rendimiento de la aplicación, se pueden escalar los componentes que manejan la carga de
-                                trabajo.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ¿Encuentras alguna desventaja en el estilo arquitectónico MVC?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>Mayor complejidad inicial: La implementación de un patrón de diseño MVC puede requerir
-                                un mayor esfuerzo y tiempo de desarrollo inicial para establecer la estructura y
-                                separación de responsabilidades adecuada, lo que puede aumentar la complejidad del
-                                proyecto.</li>
-                            <li>Mayor cantidad de archivos: Debido a la separación de responsabilidades, un proyecto MVC
-                                puede tener un mayor número de archivos en comparación con otros estilos
-                                arquitectónicos, lo que puede dificultar la navegación y el mantenimiento de la
-                                aplicación.</li>
-                            <li>Aumento del tiempo de procesamiento: En algunos casos, el uso del patrón MVC puede
-                                llevar a un aumento en el tiempo de procesamiento debido a la necesidad de pasar datos y
-                                solicitudes entre los componentes.</li>
-                            <li>Dificultades para proyectos pequeños: Para proyectos pequeños, el uso del patrón MVC
-                                puede resultar excesivo y puede requerir un mayor esfuerzo en comparación con otros
-                                estilos arquitectónicos más simples.</li>
-                            <li>Falta de uniformidad: Debido a la flexibilidad que ofrece el patrón MVC, es posible que
-                                los desarrolladores implementen diferentes versiones del patrón en diferentes partes del
-                                proyecto, lo que puede generar inconsistencias y dificultades en el mantenimiento de la
-                                aplicación.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            ¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul>
-                            <li>Separación de responsabilidades: Al limitar el código SQL a la capa del modelo, se puede
-                                mantener la separación de responsabilidades en la aplicación, lo que hace que sea más
-                                fácil de mantener y escalar.</li>
-                            <li>Abstracción de la base de datos: Al usar un ORM (mapeador objeto-relacional) o un modelo
-                                en la capa del modelo, se puede abstraer la complejidad de la base de datos y trabajar
-                                con objetos y modelos de datos más simples y coherentes.</li>
-                            <li>Mayor seguridad: Al limitar el acceso directo a la base de datos, se puede mejorar la
-                                seguridad de la aplicación al evitar posibles vulnerabilidades como inyección SQL.</li>
-                            <li>Facilidad de migración de base de datos: Al usar una capa de modelo, se puede cambiar la
-                                base de datos subyacente sin tener que cambiar el resto de la aplicación, ya que los
-                                cambios sólo necesitan realizarse en la capa del modelo.</li>
-                            <li>Facilidad de pruebas: Al limitar el código SQL a la capa del modelo, se puede
-                                simplificar la prueba de la base de datos y la capa del modelo, ya que se pueden
-                                realizar pruebas más fáciles y precisas a través de un ORM o modelo.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingFour">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            ¿Qué es SQL injection y cómo se puede prevenir? </button>
-                    </h2>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div
+                    id="collapseFive"
+                    class="collapse"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordionExample"
+                >
                     <div class="card-body">
                         <p>
-                            QL Injection (Inyección SQL) es un tipo de ataque informático que se produce cuando un
-                            atacante utiliza una entrada malintencionada para acceder a la base de datos subyacente de
-                            una aplicación y ejecutar comandos no autorizados. Esto se puede hacer mediante la
-                            introducción de código SQL malicioso en los campos de entrada de la aplicación, como
-                            formularios web, cajas de búsqueda, etc.
-                        </p>
-                        <p>
-                            Se puede prevenir de la siguientes maneras:
+                            Además de la autenticación mediante contraseñas,
+                            existen varias formas de autenticación, incluyendo:
                         </p>
                         <ul>
-                            <li>Usar sentencias preparadas: Las sentencias preparadas son una forma de enviar comandos
-                                SQL a la base de datos sin incluir entradas de usuario directamente en el comando. Esto
-                                ayuda a prevenir la inyección SQL porque las entradas de usuario se tratan como datos y
-                                no como parte del comando.</li>
-                            <li>Escapar caracteres especiales: Escapar los caracteres especiales en las entradas de
-                                usuario puede ayudar a prevenir la inyección SQL. Esto se logra convirtiendo los
-                                caracteres especiales en una representación que no pueda ser interpretada como código
-                                SQL malicioso.</li>
-                            <li>Validar las entradas del usuario: Validar las entradas del usuario antes de enviarlas a
-                                la base de datos es una forma de garantizar que solo se ingresen datos válidos. Esto se
-                                puede hacer mediante la definición de patrones de entrada válidos para los campos de
-                                entrada, como la longitud máxima, el tipo de datos esperados, etc.</li>
-                            <li>Restringir el acceso a la base de datos: Limitar el acceso a la base de datos solo a los
-                                usuarios autorizados y reducir el número de cuentas con privilegios de administrador
-                                también puede ayudar a prevenir la inyección SQL.</li>
-                            <li>Mantener actualizado el software de la base de datos: Mantener actualizado el software
-                                de la base de datos y aplicar parches de seguridad de forma regular también puede ayudar
-                                a prevenir la inyección SQL.</li>
+                            <li>
+                                Autenticación biométrica: esto implica la
+                                autenticación basada en características físicas
+                                o comportamentales únicas del usuario, como
+                                huellas dactilares, reconocimiento facial,
+                                escaneo de iris, reconocimiento de voz, entre
+                                otros.
+                            </li>
+                            <li>
+                                Autenticación de tokens: los tokens son
+                                dispositivos electrónicos pequeños que generan
+                                códigos únicos que se utilizan para autenticar
+                                el acceso. Estos pueden ser físicos, como llaves
+                                de seguridad USB, o virtuales, como aplicaciones
+                                móviles de autenticación.
+                            </li>
+                            <li>
+                                Autenticación de certificados digitales: los
+                                certificados digitales son documentos
+                                electrónicos que autentican la identidad de una
+                                entidad en línea y se utilizan para verificar la
+                                autenticidad de la comunicación. Los
+                                certificados digitales se emiten y administran
+                                mediante Autoridades de Certificación (CA).
+                            </li>
+                            <li>
+                                Autenticación basada en la ubicación: esta forma
+                                de autenticación utiliza la ubicación física del
+                                usuario como un factor de autenticación. Si el
+                                usuario intenta acceder a un sistema desde una
+                                ubicación no autorizada, se le deniega el
+                                acceso.
+                            </li>
+                            <li>
+                                Autenticación basada en la identidad federada:
+                                esta forma de autenticación permite que los
+                                usuarios accedan a múltiples sistemas y
+                                aplicaciones utilizando una sola identidad,
+                                proporcionada por un proveedor de identidad
+                                federada.
+                            </li>
                         </ul>
+                        <p>
+                            Estas son solo algunas de las formas de
+                            autenticación disponibles en la actualidad. La
+                            elección de la forma de autenticación adecuada
+                            dependerá del nivel de seguridad requerido y de las
+                            necesidades específicas del sistema o aplicación en
+                            cuestión.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <%- include('includes/foot.ejs') %>
+    </div>
+</div>
