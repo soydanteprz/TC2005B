@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Popper.js, for Bootstrap's JavaScript plugins -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> <!-- Font Awesome CSS -->
+
+
+    <title>
+        SportsID
+    </title>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: 'dm-sans', sans-serif;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        img {
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body class="bg-opacity-75">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/sportid/">SportsID</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/sportid/nba">NBA</a>
+                <a class="nav-item nav-link" href="/sportid/nfl">NFL</a>
+                <a class="nav-item nav-link" href="/sportid/preguntas">Preguntas</a>
+            </div>
+        </div>
+        <!-- sign up, log in and log out buttons -->
+        <div class="navbar-nav">
+            <% if (!isLoggedIn) { %>
+            <a href="/users/signup" class="nav-item nav-link">
+                <button class="btn btn-success my-2 my-sm-0 m-1" type="submit">Sign Up</button>
+            </a>
+            <a>
+                <button class="btn btn-light my-2 my-sm-0 m-1" type="submit" data-toggle="modal"
+                    data-target="#exampleModal">Log In</button>
+            </a>
+            <% } %>
+            <% if (isLoggedIn) { %>
+            <a href="/users/login" class="nav-item nav-link">
+                <button class="btn btn-danger my-2 my-sm-0 m-1" type="submit">Log Out</button>
+            </a>
+            <% } %>
+        </div>
+    </nav>
+    <main>
