@@ -33,8 +33,10 @@ CREATE TABLE `player` (
   `position` varchar(30) NOT NULL,
   `image` varchar(512) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `id` int(11) NOT NULL,
-  `team_id` int(11) NOT NULL
+-- auto increment id
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  -- team id is nos required
+  `team_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
