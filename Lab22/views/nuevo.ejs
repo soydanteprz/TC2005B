@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs') %>
+    <!-- Registar nuevo jugador con nombre, equipo y foto -->
+
+    <div class="form-group text-center">
+
+        <h1>Registrar nuevo jugador</h1>
+
+        <br><br>
+
+        <form action= "/sportid/nuevo" method="POST" enctype="multipart/form-data">
+            <input type="hidden" value="<%= csrfToken %>" name="_csrf" />
+
+            <label for="name">Nombre</label>
+            <input name="name" type="text" class="form-control w-50 m-auto" id="name" placeholder="Nombre">
+
+            <label for="number">Numero</label>
+            <input name="number" type="text" class="form-control w-50 m-auto" id="number" placeholder="Numero">
+
+            <label for="position">Posicion</label>
+            <input name="position" type="text" class="form-control w-50 m-auto" id="position" placeholder="Posicion">
+            <label for="image">Foto</label>
+            <input name="image" type="file" class="form-control-file w-50 m-auto" id="image" value="Registar">
+
+            <br><br>
+
+            <button type="submit" class="btn btn-primary ">Submit</button>
+
+        </form>
+    </div>
+
+
+
+    <% include('includes/foot.ejs') %>
