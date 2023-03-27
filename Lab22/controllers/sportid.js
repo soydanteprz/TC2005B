@@ -1,22 +1,6 @@
-const Sportid = require("../models/sportid");
-
-const playersnfl = [
-    {
-        name: "Tom Brady",
-        team: "Tampa Bay Buccaneers",
-        image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/q7dpdlxyu5rs05rgh1le",
-    },
-    {
-        name: "Patrick Mahomes",
-        team: "Kansas City Chiefs",
-        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3139477.png&w=350&h=254",
-    },
-    {
-        name: "Aaron Rodgers",
-        team: "Green Bay Packers",
-        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8439.png",
-    },
-];
+const Playernba = require("../models/playernba");
+const Sportid = require("../models/playernba");
+const Playernfl = require("../models/playernfl");
 
 // exports.get_login = (req, res, next) => {
 //     res.render('login', {
@@ -46,7 +30,7 @@ exports.get_playersnba = (req, res, next) => {
 
     const id = req.params.id || 0;
 
-    Sportid.fetch(id).then(([rows, fieldData]) => {
+    Playernba.fetch(id).then(([rows, fieldData]) => {
         console.log(rows);
 
         res.render("nba", {
@@ -80,13 +64,23 @@ exports.get_preguntas = (req, res, next) => {
 };
 
 exports.get_playersnfl = (req, res, next) => {
-    res.render("nfl", {
-        pageTitle: "NFL",
-        players: playersnfl,
-        isLoggedIn: req.session.isLoggedIn || false,
-        nombre: req.session.nombre || '',
-    });
-};
+    const id = req.params.id || 0;
+    Playernfl.fetch(id)
+        .then(([rows, fieldData]) => {
+            console.log(rows);
+
+            res.render("nfl", {
+                pageTitle: "NFL",
+                players: rows,
+                isLoggedIn: req.session.isLoggedIn || false,
+                nombre: req.session.nombre || '',
+            });
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+    };
+
 
 exports.get_nuevo = (req, res, next) => {
     res.render("nuevo", {
