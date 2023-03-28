@@ -2,11 +2,13 @@
 
 <%- include('includes/head.ejs') %>
 
-    <div class="container text-center">
-        <h1>NFL Players</h1>
+<div class="container text-center">
+    <h1>NFL Players</h1>
+    <div class="row">
         <% for(var i=0; i<players.length; i++) { %>
+        <div class="col-md-4">
             <div class="card text-center p-lg-5">
-                <img class="rounded mx-auto d-block w-35" src="<%= players[i].image %>" alt="<%= players[i].name %>">
+                <img class="rounded mx-auto d-block img-fluid" src="<%= players[i].image %>" alt="<%= players[i].name %>">
                 <div class="card-body">
                     <h5 class="card-title">
                         <%= players[i].name %>
@@ -19,7 +21,11 @@
                     </p>
                 </div>
             </div>
-            <% } %>
+        </div>
+        <% } %>
     </div>
+</div>
+
+
 
     <%- include('includes/foot.ejs') %>
