@@ -1,0 +1,34 @@
+<%- include('includes/head.ejs') %>
+
+<script
+    src="https://kit.fontawesome.com/77587b01e9.js"
+    crossorigin="anonymous"
+></script>
+
+<div class="container">
+    <h1 class="text-center"><%= response.strPlayer %></h1>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <img
+                src="<%= response.strThumb %>"
+                class="img-fluid"
+                alt="Responsive image"
+            />
+            <br />
+            <br />
+            <h4 class="text-center"><%= response.strTeam %></h4>
+            <h4 class="text-center"><%= response.strPosition %></h4>
+            <h4 class="text-center"><%= response.strHeight %></h4>
+            <h4 class="text-center"><%= response.strWeight %></h4>
+            <h4 class="text-center"><%= response.strBirthLocation %></h4>
+        </div>
+        <div class="col-md-6">
+            <h3>Biografía</h3>
+            <p class="text-justify"><%= response.strDescriptionEN %></p>
+        </div>
+    </div>
+
+    <%- include('includes/foot.ejs') %>
+</div>
