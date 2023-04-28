@@ -18,4 +18,6 @@ router.get("/nfl", sportidController.get_playersnfl);
 
 router.get("/preguntas", sportidController.get_preguntas);
 
+router.get("player/buscar/:valor_busqueda", sportidController.get_buscar);
+
 module.exports = router;

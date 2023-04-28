@@ -20,6 +20,16 @@ const Playernfl = require("../models/playernfl");
 //     res.status(300).redirect("/sportid");
 // };
 
+exports.get_buscar = (req, res, next) => {
+    Playernba.find(req.params.valor_busqueda).then(([rows, fieldData]) => {
+        console.log(rows);
+        res.status(200).json({ players: rows });
+    })
+        .catch((err) => {
+            console.log(err);
+        });
+};
+
 exports.get_playersnba = (req, res, next) => {
 
     const cookies = req.get('Cookie') || '';

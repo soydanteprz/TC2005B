@@ -19,6 +19,9 @@
     <div class="row">
       <div class="col-md-12">
         <h1 class="text-center">NBA Players</h1>
+        <label for="buscar">Buscar:</label>
+        <input name="buscar" id="buscar" class="input is-info" type="text">
+        <br><br>
       </div>
     </div>
     <div class="introduction">
@@ -76,6 +79,51 @@
 
   </div>
 
+  <script>
+    document.getElementById('buscar').onkeyup = () => {
+      const valor_busqueda = document.getElementById('buscar').value;
+
+      fetch('/sportid/player/buscar/' + valor_busqueda, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          console.log(data);
+          const result = '';
+
+          for (let i = 0; i < data.length; i++) {
+            result += `
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-header">
+                  ${data[i].name}
+                </div>
+                <div class="card-body">
+                  <img src="/uploads/${data[i].image}" class="img-fluid">
+                  <p class="card-text">${data[i].team}</p>
+                  <a href="/sportid/editar/${data[i].id}" class="btn btn-primary">Editar</a>
+                  <a href="/sportid/eliminar/${data[i].id}" class="btn btn-danger">Eliminar</a>
+                </div>
+                <div class="card-footer text-muted">
+                  ${data[i].position}
+                </div>
+              </div>
+            </div>
+            `;
+          }
+
+          document.getElementById('resultados').innerHTML = result;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
+  </script>
 
 
     <%- include('includes/foot.ejs') %>

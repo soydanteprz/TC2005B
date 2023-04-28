@@ -25,4 +25,8 @@ module.exports = class Playernba { // this is the class of the player
         }
         return db.execute(query);
         }
+
+        static find(valor_busqueda) {
+            return db.execute('SELECT * FROM playernba WHERE name LIKE ?', ['%' + valor_busqueda + '%']);
+        }
 }
